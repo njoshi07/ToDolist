@@ -105,6 +105,6 @@ class TodosController extends Controller
     {
         $todo = Todo::find($id);
         $todo->delete();
-        return redirect('/')->with('success', 'Todo Deleted');
+        return redirect('/')->with('success', 'Todo Delete');
     }
 }
